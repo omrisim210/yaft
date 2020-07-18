@@ -5,14 +5,14 @@
 enum {
 	DEFAULT_FG           = 7,
 	DEFAULT_BG           = 0,
-	ACTIVE_CURSOR_COLOR  = 2,
-	PASSIVE_CURSOR_COLOR = 1,
+	ACTIVE_CURSOR_COLOR  = 8,
+	PASSIVE_CURSOR_COLOR = 15,
 };
 
 /* misc */
 enum {
 	VERBOSE          = false,  /* write dump of input to stdout, debug message to stderr */
-	TABSTOP          = 8,      /* hardware tabstop */
+	TABSTOP          = 4,      /* hardware tabstop */
 	LAZY_DRAW        = true,   /* don't draw when input data size is larger than BUFSIZE */
 	BACKGROUND_DRAW  = false,  /* always draw even if vt is not active */
 	VT_CONTROL       = true,   /* handle vt switching */
